@@ -47,7 +47,10 @@ A pub workspace (`pubspec.yaml`); run `flutter pub get` at the root.
   executed by an agent that connects to the test over a WebSocket: XCUITest
   in `agent/darwin` (Objective-C, macOS and iOS targets), UI Automator in
   `agent/android` (Java). `bin/test.dart` is the launcher that starts the
-  agent where the app can't (iOS, Android).
+  agent where the app can't (iOS, Android). Windows is the exception:
+  `package:platform_automation/uia.dart` mirrors Microsoft UI Automation
+  (plus `SendInput`) and runs it in-process, on a background isolate in the
+  COM multithreaded apartment, so there's no agent.
 - `tool/eclipse_classpath.dart` – for Java completion in editors, generates
   an (ignored) Eclipse project over all the repo's Java sources, using the
   Android SDK and the libraries in Gradle's cache
@@ -91,6 +94,18 @@ arguments are passed through):
 ../../../flutter_zero/bin/dart run platform_automation:test -d emulator-5554 integration_test
 ```
 
+Each test file is its own entry point, so `flutter test` builds and
+launches the app once per file. `integration_test/all.dart` imports them
+all, so passing it instead of the directory builds and launches once (the
+tests then share one app process, so each file must clean up after itself):
+
+```sh
+../../../flutter_zero/bin/flutter test integration_test/all.dart -d windows
+```
+
+It isn't named `*_test.dart`, so running the directory doesn't pick it up;
+add new test files to it.
+
 - iOS: only booted simulators for now. The agent is built once per run and
   serves every test file's app launch.
 - Android: devices are named by adb serial. The agent is an instrumentation
@@ -102,13 +117,16 @@ arguments are passed through):
   `XCUIAutomation.connect()` builds (incrementally) and starts the agent itself
   when no launcher is involved; that's why the example's debug build isn't
   sandboxed.
+- Windows: plain `flutter test integration_test/all.dart -d windows` (or the
+  directory); no launcher or agent. It must run in the desktop session (not over SSH, where windows
+  never show).
 - The agent's output goes to
   `packages/platform_automation/agent/{darwin,android}/build/agent.log`; on
   Android, also see `adb logcat -s PAAgent`.
 - Each file's tests are wrapped in a platform group (`support.dart`):
   `@TestOn` is evaluated against the host, not the device.
-- UI automation moves the mouse on macOS; don't use the machine while these
-  tests run. The first run may ask to allow automation.
+- UI automation moves the mouse on macOS and Windows; don't use the machine
+  while these tests run. The first run may ask to allow automation (macOS).
 
 ## Threading
 

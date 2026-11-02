@@ -7,6 +7,8 @@
 ///   on macOS and iOS.
 /// - `package:platform_automation/uiautomator.dart`: UI Automator on
 ///   Android.
+/// - `package:platform_automation/uia.dart`: Microsoft UI Automation on
+///   Windows. Runs in-process on a background isolate, without an agent.
 ///
 /// The calls are executed by an agent (`agent/darwin`, `agent/android`)
 /// that runs out of process, attached to the app the test runs in, and is
