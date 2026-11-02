@@ -19,6 +19,7 @@ dependencies:
   native_toolchain_ninja: ^0.2.0
   objective_c: ^9.4.1
   jni: ^1.0.3
+  win32: ^6.4.0
 
 flutter:
   plugin:

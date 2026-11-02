@@ -1,7 +1,8 @@
 # platform_host
 
 Thin Dart bindings for host platform windowing APIs: macOS (`NSWindow`), and
-proofs of concept for iOS (`UIWindow`) and Android (`AndroidWindow`).
+proofs of concept for iOS (`UIWindow`), Android (`AndroidWindow`) and Windows
+(`Win32Window`).
 
 ## Layout
 
@@ -114,3 +115,8 @@ arguments are passed through):
 AppKit must be used on the main thread, and the wrappers assume they are
 called there. flutter_zero guarantees that. A plain `dart run` does not, so
 only the non-AppKit parts are covered by `flutter test`.
+
+Win32 windows belong to the thread that created them, and their messages are
+pumped by that thread's message loop, so `Win32Window` also relies on Dart
+running on the platform thread. Creating, moving and renaming a window works
+without a message loop, so those are unit-tested with `flutter test` too.
