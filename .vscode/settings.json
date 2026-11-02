@@ -1,0 +1,8 @@
+{
+    "dart.flutterSdkPath": "flutter_zero",
+    "dart.addSdkToTerminalPath": true,
+    // Java tooling uses the Eclipse project (.project, .classpath), not the
+    // Gradle builds.
+    "java.import.gradle.enabled": false,
+    "java.import.maven.enabled": false
+}

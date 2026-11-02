@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The instrumentation runs in this app's process, so its permissions and
+         network policy apply: the agent connects to ws://127.0.0.1:<port>. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:label="PAAgent"
+        android:usesCleartextTraffic="true" />
+</manifest>

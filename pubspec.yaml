@@ -1,0 +1,14 @@
+name: platform_host_workspace
+publish_to: none
+
+environment:
+  sdk: ^3.15.0-37.0.dev
+
+workspace:
+  - packages/platform_host
+  - packages/platform_host/example
+  - packages/platform_automation
+
+dev_dependencies:
+  # For analysis_options.yaml.
+  flutter_lints: ^6.0.0

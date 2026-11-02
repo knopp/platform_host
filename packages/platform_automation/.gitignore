@@ -1,0 +1,10 @@
+# Agent build output (xcodebuild -derivedDataPath, including agent.log) and
+# the compile database generated from it.
+/agent/darwin/build/
+/agent/darwin/compile_commands.json
+
+# Android agent build output (including agent.log) and the SDK location the
+# launcher writes for it.
+/agent/android/build/
+/agent/android/.gradle/
+/agent/android/local.properties

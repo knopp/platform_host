@@ -1,0 +1,277 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0000000000000000000011 /* PAAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000010 /* PAAgent.m */; };
+		AA0000000000000000000111 /* PAAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000010 /* PAAgent.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA0000000000000000000010 /* PAAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PAAgent.m; sourceTree = "<group>"; };
+		AA0000000000000000000020 /* PAAgent.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PAAgent.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0000000000000000000120 /* PAAgentIOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PAAgentIOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA0000000000000000000031 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0000000000000000000131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA0000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000002 /* PAAgent */,
+				AA0000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000002 /* PAAgent */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000010 /* PAAgent.m */,
+			);
+			path = PAAgent;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000020 /* PAAgent.xctest */,
+				AA0000000000000000000120 /* PAAgentIOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA0000000000000000000040 /* PAAgent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0000000000000000000060 /* Build configuration list for PBXNativeTarget "PAAgent" */;
+			buildPhases = (
+				AA0000000000000000000030 /* Sources */,
+				AA0000000000000000000031 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PAAgent;
+			productName = PAAgent;
+			productReference = AA0000000000000000000020 /* PAAgent.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		AA0000000000000000000140 /* PAAgentIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0000000000000000000160 /* Build configuration list for PBXNativeTarget "PAAgentIOS" */;
+			buildPhases = (
+				AA0000000000000000000130 /* Sources */,
+				AA0000000000000000000131 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PAAgentIOS;
+			productName = PAAgentIOS;
+			productReference = AA0000000000000000000120 /* PAAgentIOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA0000000000000000000050 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					AA0000000000000000000040 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					AA0000000000000000000140 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = AA0000000000000000000061 /* Build configuration list for PBXProject "PAAgent" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA0000000000000000000001;
+			productRefGroup = AA0000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA0000000000000000000040 /* PAAgent */,
+				AA0000000000000000000140 /* PAAgentIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA0000000000000000000030 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000000000000000000011 /* PAAgent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0000000000000000000130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000000000000000000111 /* PAAgent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA0000000000000000000070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AA0000000000000000000071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AA0000000000000000000072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-gen-cdb-fragment-path",
+					"$(PROJECT_DIR)/build/cdb",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.platformhost.PAAgent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AA0000000000000000000073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-gen-cdb-fragment-path",
+					"$(PROJECT_DIR)/build/cdb",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.platformhost.PAAgent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AA0000000000000000000172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-gen-cdb-fragment-path",
+					"$(PROJECT_DIR)/build/cdb",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.platformhost.PAAgentIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA0000000000000000000173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-gen-cdb-fragment-path",
+					"$(PROJECT_DIR)/build/cdb",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.platformhost.PAAgentIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA0000000000000000000060 /* Build configuration list for PBXNativeTarget "PAAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000000000000000000072 /* Debug */,
+				AA0000000000000000000073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AA0000000000000000000160 /* Build configuration list for PBXNativeTarget "PAAgentIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000000000000000000172 /* Debug */,
+				AA0000000000000000000173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AA0000000000000000000061 /* Build configuration list for PBXProject "PAAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000000000000000000070 /* Debug */,
+				AA0000000000000000000071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA0000000000000000000050 /* Project object */;
+}

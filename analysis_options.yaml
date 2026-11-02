@@ -1,0 +1,6 @@
+# Shared by the workspace's packages unless they have their own.
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - flutter_zero/**

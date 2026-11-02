@@ -1,0 +1,23 @@
+name: platform_automation
+description: >-
+  Drive the OS's UI automation (XCUITest on macOS and iOS, UI Automator on
+  Android) from Dart integration tests, through an agent controlled over a
+  WebSocket.
+version: 0.0.1
+publish_to: none
+
+resolution: workspace
+
+environment:
+  sdk: ^3.15.0-37.0.dev
+
+dependencies:
+  code_assets: ^1.2.0
+  ffi: ^2.1.4
+  hooks: ^2.0.0
+  logging: ^1.3.0
+  native_toolchain_ninja: ^0.2.0
+  objective_c: ^9.4.1
+
+dev_dependencies:
+  lints: ^6.0.0

@@ -1,0 +1,4 @@
+[submodule "flutter_zero"]
+	path = flutter_zero
+	url = https://github.com/knopp/flutter_zero.git
+	branch = master
